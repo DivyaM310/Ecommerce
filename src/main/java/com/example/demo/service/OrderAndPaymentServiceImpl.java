@@ -38,7 +38,6 @@ public class OrderAndPaymentServiceImpl implements OrderAndPaymentService {
 		cashback.setPoints(dto.getRating() * 4);
 
 		fRepository.save(feedback);
-		System.out.println(10 / 0);
 		cRepository.save(cashback);
 	}
 
