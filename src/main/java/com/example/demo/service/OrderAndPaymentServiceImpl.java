@@ -28,7 +28,7 @@ public class OrderAndPaymentServiceImpl implements OrderAndPaymentService {
 	@Autowired
 	FeedbackRepository fRepository;
 
-	@Transactional(propagation = Propagation.MANDATORY)
+	@Transactional
 	public void saveFeedbackAndCashback(OrderAndPaymentDto dto) {
 		Feedback feedback = new Feedback();
 		feedback.setMessage(dto.getMessage());
